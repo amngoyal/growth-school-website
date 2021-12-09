@@ -57,6 +57,7 @@ const GlobalStyles = createGlobalStyle`
     *,
     ::before,
     ::after {
+        margin: 0;
         box-sizing: border-box;
         font-family: 'Gilroy', sans-serif;
     }
@@ -84,6 +85,14 @@ const GlobalStyles = createGlobalStyle`
 
     h3{
 
+    }
+    h4{
+
+    }
+    h6{
+        font-size: 17px;
+        font-weight: 700;
+        color: ${({ theme }) => theme.colors.aquaDeep}
     }
 
     p, span{

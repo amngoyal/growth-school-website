@@ -27,6 +27,24 @@ export const LinkButton = styled.button`
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 1170px;
+  max-width: 1150px;
   margin: 0 auto;
+  padding: 0 20px;
+`;
+
+export const Icon = styled.div`
+  width: 46px;
+  height: 46px;
+  background-color: ${({ theme }) => theme.colors.iconBackground};
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg,
+  img {
+    width: 23px;
+    object-fit: contain;
+  }
 `;
