@@ -84,11 +84,10 @@ const GlobalStyles = createGlobalStyle`
         text-align: center;
     }
 
-    h3{
-
-    }
-    h4{
-
+    h5{
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: ${({ theme }) => theme.colors.aquaDeep}
     }
     h6{
         font-size: 1rem;

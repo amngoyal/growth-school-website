@@ -3,6 +3,7 @@ import Banner from "../banner";
 import WhatWillYouLearn from "../what-will-you-learn";
 import WorkshopLearnings from "../workshop-video";
 import WhoIsThisWorkshopFor from "../who-is-this-workshop-for";
+import UnlockBonuses from "../unlock-bonuses";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <WorkshopLearnings />
       <WhatWillYouLearn />
       <WhoIsThisWorkshopFor />
+      <UnlockBonuses />
     </div>
   );
 };
