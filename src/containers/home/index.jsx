@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../banner";
 import WhatWillYouLearn from "../what-will-you-learn";
 import WorkshopLearnings from "../workshop-video";
+import WhoIsThisWorkshopFor from "../who-is-this-workshop-for";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner />
       <WorkshopLearnings />
       <WhatWillYouLearn />
+      <WhoIsThisWorkshopFor />
     </div>
   );
 };

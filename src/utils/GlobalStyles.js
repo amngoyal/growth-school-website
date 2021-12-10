@@ -81,6 +81,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: 3rem;
         font-weight: 800;
         color: #fff;
+        text-align: center;
     }
 
     h3{
@@ -90,7 +91,7 @@ const GlobalStyles = createGlobalStyle`
 
     }
     h6{
-        font-size: 17px;
+        font-size: 1rem;
         font-weight: 700;
         color: ${({ theme }) => theme.colors.aquaDeep}
     }
@@ -99,6 +100,10 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1rem;
         font-weight: 500;
         color: ${({ theme }) => theme.colors.text}
+    }
+    b{
+        font-size: 1rem;
+        color: ${({ theme }) => theme.colors.aquaDeep}
     }
 
 `;

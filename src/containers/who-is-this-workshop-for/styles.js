@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const BannerWrapper = styled.section`
-  padding: 12% 0 140px;
+export const Wrapper = styled.section`
+  padding: 6% 0;
   width: 100%;
   background-image: linear-gradient(
     to right,
@@ -36,40 +36,38 @@ export const BannerWrapper = styled.section`
     border: 1px solid rgba(255, 255, 255, 0.15);
     transform: scale(2);
   }
+
+  p {
+    margin: 50px 0 40px;
+  }
 `;
 
-export const BannerContent = styled.div`
-  width: 100%;
-  max-width: 640px;
-  margin: 0 auto;
+export const List = styled.div`
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+`;
 
+List.Item = styled.div`
+  width: calc((100% - 60px) / 4);
+  min-width: 210px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`;
+
+export const CtaContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  span {
-    width: 150px;
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 5px;
-    padding: 13px 0px 8px;
-    color: #ffffff;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-  }
-
-  h2 {
-    text-align: center;
-    margin-top: 10px;
-  }
-
   p {
-    text-align: center;
-    margin-top: 18px;
-  }
-
-  button {
-    margin-top: 40px;
+    color: white;
   }
 `;
