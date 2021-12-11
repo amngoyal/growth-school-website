@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
   background: linear-gradient(
     180deg,
     rgba(5, 217, 186, 0.1) 0.01%,

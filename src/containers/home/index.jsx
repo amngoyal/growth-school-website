@@ -7,6 +7,7 @@ import UnlockBonuses from "../unlock-bonuses";
 import MeetYourTrainer from "../meet-your-trainer";
 import GetCertified from "../get-certified";
 import GetTheOffer from "../get-the-offer";
+import Faqs from "../faqs";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <MeetYourTrainer />
       <GetCertified />
       <GetTheOffer />
+      <Faqs />
     </div>
   );
 };
