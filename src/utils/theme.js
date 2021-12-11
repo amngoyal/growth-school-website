@@ -9,6 +9,7 @@ const theme = {
     backgroundTwo: "#004848",
     backgroundThree: "#E8F9F6",
     iconBackground: "#066a671a;",
+    iconBackgroundTwo: "rgba(255, 255, 255, 0.15)",
   },
 };
 export default theme;

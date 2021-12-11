@@ -15,8 +15,9 @@ export const Wrapper = styled.section`
 `;
 
 export const TrainerCard = styled.div`
-  width: 700px;
-  padding: 1.5%;
+  width: 100%;
+  max-width: 700px;
+  padding: 16px;
   box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   background: #fff;

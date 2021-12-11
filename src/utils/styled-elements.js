@@ -28,12 +28,18 @@ export const Container = styled.div`
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 20px;
+
+  .get-certified-subtitle {
+    margin-top: 12px;
+  }
 `;
 
 export const Icon = styled.div`
   width: 46px;
+  min-width: 46px;
   height: 46px;
-  background-color: ${({ theme }) => theme.colors.iconBackground};
+  background-color: ${({ theme, secondary }) =>
+    secondary ? theme.colors.iconBackgroundTwo : theme.colors.iconBackground};
   border-radius: 50%;
 
   display: flex;
