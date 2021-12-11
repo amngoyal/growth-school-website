@@ -15,6 +15,7 @@ export const LinkButton = styled.button`
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  box-shadow: 12px 12.78px 30px rgba(15, 205, 200, 0.2);
 
   :hover {
     background: ${({ theme, secondary }) =>
