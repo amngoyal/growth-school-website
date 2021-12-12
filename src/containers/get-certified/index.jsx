@@ -11,6 +11,7 @@ import { ReactComponent as ShareIcon } from "../../assets/icons/share.svg";
 import { ReactComponent as LockIcon } from "../../assets/icons/lock.svg";
 import CertificateImg from "../../assets/images/certificate.png";
 import BgPattern from "../../assets/images/bg-pattern.svg";
+import Fade from "react-reveal/Fade";
 
 const GetCertified = () => {
   return (
@@ -18,11 +19,17 @@ const GetCertified = () => {
       <img className="certified-bg-pattern-1" src={BgPattern} alt="pattern" />
       <img className="certified-bg-pattern-2" src={BgPattern} alt="pattern" />
       <Container>
-        <h2>Get Certified</h2>
-        <p className="section-subtitle">
-          Yes! You will be certified for this workshop once you submit your
-          assignment.
-        </p>
+        <Fade bottom cascade>
+          <div>
+            <h2>Get Certified</h2>
+          </div>
+          <div>
+            <p className="section-subtitle">
+              Yes! You will be certified for this workshop once you submit your
+              assignment.
+            </p>
+          </div>
+        </Fade>
 
         <CertifiedContainer>
           <CertificateFeatures>

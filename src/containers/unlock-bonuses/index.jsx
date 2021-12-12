@@ -2,6 +2,7 @@ import React from "react";
 import Timer from "../../components/timer";
 import { Container, LinkButton } from "../../utils/styled-elements";
 import { Grid, TimerContainer, Wrapper } from "./styles";
+import Fade from "react-reveal/Fade";
 
 const UnlockBonuses = () => {
   const time = new Date();
@@ -9,9 +10,13 @@ const UnlockBonuses = () => {
   return (
     <Wrapper>
       <Container>
-        <h2>
-          Unlock bonuses worth <br /> ₹25,000
-        </h2>
+        <Fade bottom cascade>
+          <div>
+            <h2>
+              Unlock bonuses worth <br /> ₹25,000
+            </h2>
+          </div>
+        </Fade>
 
         <Grid>
           {data.map((item, index) => (

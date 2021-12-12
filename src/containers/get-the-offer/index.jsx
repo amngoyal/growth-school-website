@@ -1,12 +1,17 @@
 import React from "react";
 import { Container, LinkButton } from "../../utils/styled-elements";
 import { OfferWhile, Wrapper } from "./styles";
+import Fade from "react-reveal/Fade";
 
 const GetTheOffer = () => {
   return (
     <Wrapper>
       <Container>
-        <h2>Get the offer while it lasts!</h2>
+        <Fade bottom cascade>
+          <div>
+            <h2>Get the offer while it lasts!</h2>
+          </div>
+        </Fade>
         <OfferWhile>
           <OfferWhile.Left>
             <h4>LinkedIn 5 Day Workshop Offer (Save ₹1,500)</h4>

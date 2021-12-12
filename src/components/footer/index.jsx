@@ -9,12 +9,14 @@ import { ReactComponent as TwitterIcon } from "../../assets/icons/twitter.svg";
 import { ReactComponent as FbIcon } from "../../assets/icons/fb.svg";
 import { ReactComponent as InstagramIcon } from "../../assets/icons/instagram.svg";
 import FooterArrow from "../../assets/images/footer-arrow.svg";
+import Zoom from "react-reveal/Zoom";
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      <img className="footer-bg-arrow" src={FooterArrow} alt="arrow" />
-
+      <Zoom left>
+        <img className="footer-bg-arrow" src={FooterArrow} alt="arrow" />
+      </Zoom>
       <Container>
         <FooterContent>
           <FooterContent.Logo>

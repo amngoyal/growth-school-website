@@ -106,8 +106,8 @@ export const ToggleIcon = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  /* transition: transform 2s cubic-bezier(0, 1, 0, 1); */
   transform: rotate(${({ isOpen }) => (isOpen ? "45deg" : "0deg")});
+  transition: transform 0.5s linear;
 
   img {
     width: 12px;
@@ -117,9 +117,9 @@ export const ToggleIcon = styled.div`
 
 Accordion.Content = styled.div`
   overflow: hidden;
-  max-height: 1000px;
-  /* transition: max-height 2s cubic-bezier(0, 1, 0, 1);  */
-  max-height: ${({ isOpen }) => (isOpen ? "1000px" : "0px")};
+  height: 0;
+  height: ${({ isOpen }) => (isOpen ? "70px" : "0px")};
+  transition: height 0.5s linear;
 
   p {
     color: ${({ theme }) => theme.colors.aquaDeep};

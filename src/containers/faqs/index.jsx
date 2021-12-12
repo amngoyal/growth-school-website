@@ -10,6 +10,7 @@ import {
 } from "./styles";
 import AddIcon from "../../assets/icons/plus.png";
 import BgPattern from "../../assets/images/bg-pattern.svg";
+import Fade from "react-reveal/Fade";
 
 const Faqs = () => {
   const [accordionIndex, setAccordionIndex] = useState("");
@@ -29,10 +30,18 @@ const Faqs = () => {
 
       <Container>
         <FaqsContent>
-          <h2>
-            FAQs
-            <img className="faqs-bg-pattern-1" src={BgPattern} alt="pattern" />
-          </h2>
+          <Fade bottom cascade>
+            <div>
+              <h2>
+                FAQs
+                <img
+                  className="faqs-bg-pattern-1"
+                  src={BgPattern}
+                  alt="pattern"
+                />
+              </h2>
+            </div>
+          </Fade>
           <img className="faqs-bg-pattern-2" src={BgPattern} alt="pattern" />
 
           <AccordionContainer>

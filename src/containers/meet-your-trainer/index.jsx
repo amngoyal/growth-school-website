@@ -14,13 +14,17 @@ import YahooImg from "../../assets/images/yahoo.png";
 import IndianExpressImg from "../../assets/images/indian-express.png";
 import DailyHuntImg from "../../assets/images/daily-hunt.png";
 import HindustanTimesImg from "../../assets/images/hindustan-times.png";
+import Fade from "react-reveal/Fade";
 
 const MeetYourTrainer = () => {
   return (
     <Wrapper>
       <Container>
-        <h2>Meet Your Trainer</h2>
-
+        <Fade bottom cascade>
+          <div>
+            <h2>Meet Your Trainer</h2>
+          </div>
+        </Fade>
         <TrainerCard>
           <TrainerCard.Left>
             <img src={VaibhavImg} alt="vaibhav" />

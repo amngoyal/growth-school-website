@@ -1,13 +1,17 @@
 import React from "react";
 import { Container } from "../../utils/styled-elements";
 import { Wrapper, Card, CardsList } from "./styles";
+import Fade from "react-reveal/Fade";
 
 const WhatWillYouLearn = () => {
   return (
     <Wrapper>
       <Container>
-        <h2>What will you learn in the workshop?</h2>
-
+        <Fade bottom cascade>
+          <div>
+            <h2>What will you learn in the workshop?</h2>
+          </div>
+        </Fade>
         <CardsList>
           {data.map((item) => (
             <Card key={item.title}>

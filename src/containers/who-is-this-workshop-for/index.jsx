@@ -3,6 +3,7 @@ import { Container, Icon, LinkButton } from "../../utils/styled-elements";
 import { CtaContainer, List, Wrapper } from "./styles";
 import { ReactComponent as CheckIcon } from "../../assets/icons/check.svg";
 import BgPattern from "../../assets/images/bg-pattern.svg";
+import Fade from "react-reveal/Fade";
 
 const WhoIsThisWorkshopFor = () => {
   return (
@@ -11,8 +12,11 @@ const WhoIsThisWorkshopFor = () => {
       <img className="who-bg-pattern-2" src={BgPattern} alt="pattern" />
 
       <Container>
-        <h2>Who is this workshop for?</h2>
-
+        <Fade bottom cascade>
+          <div>
+            <h2>Who is this workshop for?</h2>
+          </div>
+        </Fade>
         <List>
           {data.map((item) => (
             <List.Item kley={item}>
