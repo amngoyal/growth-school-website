@@ -60,6 +60,10 @@ export const Wrapper = styled.section`
     filter: brightness(100);
     z-index: 3;
   }
+
+  @media (max-width: 576px) {
+    padding: 50px 0;
+  }
 `;
 
 export const CarouselContainer = styled.div`

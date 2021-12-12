@@ -29,6 +29,7 @@ export const Container = styled.div`
   max-width: 1210px;
   margin: 0 auto;
   padding: 0 20px;
+  z-index: 2;
 
   .section-subtitle {
     margin-top: 12px;

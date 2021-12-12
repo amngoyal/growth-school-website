@@ -17,6 +17,7 @@ export const BannerWrapper = styled.section`
   background-color: ${({ theme }) => theme.colors.mintGreen};
   overflow: hidden;
   position: relative;
+  z-index: 0;
 
   ::before {
     content: "";
@@ -25,7 +26,7 @@ export const BannerWrapper = styled.section`
     position: absolute;
     top: -50px;
     left: -50px;
-    z-index: 1;
+    z-index: 0;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.15);
   }
@@ -37,7 +38,7 @@ export const BannerWrapper = styled.section`
     position: absolute;
     bottom: 17%;
     right: -6%;
-    z-index: 1;
+    z-index: 0;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.15);
     transform: scale(2);
@@ -67,7 +68,6 @@ export const BannerWrapper = styled.section`
 export const BannerContent = styled.div`
   width: 100%;
   max-width: 680px;
-  padding: 0 20px;
   margin: 0 auto;
 
   display: flex;

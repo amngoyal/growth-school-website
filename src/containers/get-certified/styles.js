@@ -15,7 +15,7 @@ export const Wrapper = styled.section`
     left: -50px;
     width: 200px;
     height: 200px;
-    z-index: 6;
+    z-index: 0;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.15);
   }
@@ -28,7 +28,7 @@ export const Wrapper = styled.section`
     width: 200px;
     height: 200px;
     box-sizing: content-box;
-    z-index: 6;
+    z-index: 0;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.15);
     transform: scale(2);
@@ -51,6 +51,10 @@ export const Wrapper = styled.section`
     opacity: 0.5;
     z-index: 3;
     filter: brightness(100);
+  }
+
+  @media (max-width: 576px) {
+    padding: 50px 0;
   }
 `;
 

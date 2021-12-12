@@ -106,7 +106,16 @@ const GlobalStyles = createGlobalStyle`
         color: #fff;
         text-align: center;
 
-        @media(max-width: 420px){
+        @media(max-width: 576px){
+            font-size: 2.5rem;
+        }
+    }
+    h4{
+        font-size: 2.25;
+    font-weight: 800;
+    color: ${({ theme }) => theme.colors.aquaDeep};
+
+    @media(max-width: 576px){
             font-size: 2rem;
         }
     }
@@ -116,7 +125,7 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 800;
         color: ${({ theme }) => theme.colors.aquaDeep};
 
-        @media(max-width: 420px){
+        @media(max-width: 576px){
             font-size: 1.2rem;
         }
     }

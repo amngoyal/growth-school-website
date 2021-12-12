@@ -12,6 +12,10 @@ export const Wrapper = styled.section`
   h2 {
     color: ${({ theme }) => theme.colors.aquaDeep};
   }
+
+  @media (max-width: 576px) {
+    padding: 50px 0;
+  }
 `;
 
 export const TrainerCard = styled.div`

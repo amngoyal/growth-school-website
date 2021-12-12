@@ -61,6 +61,10 @@ export const Wrapper = styled.section`
     filter: brightness(100);
     z-index: 3;
   }
+
+  @media (max-width: 576px) {
+    padding: 50px 0;
+  }
 `;
 
 export const List = styled.div`
@@ -69,6 +73,10 @@ export const List = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+
+  @media (max-width: 576px) {
+    margin-top: 30px;
+  }
 `;
 
 List.Item = styled.div`
@@ -90,5 +98,9 @@ export const CtaContainer = styled.div`
 
   p {
     color: white;
+
+    @media (max-width: 576px) {
+      text-align: center;
+    }
   }
 `;

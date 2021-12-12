@@ -53,6 +53,12 @@ export const HeaderAction = styled.div`
     padding: 12px;
     color: #fff;
   }
+
+  @media (max-width: 576px) {
+    button {
+      display: none;
+    }
+  }
 `;
 
 export const HamburgerMenu = styled.div`
@@ -71,5 +77,9 @@ export const HamburgerMenu = styled.div`
   svg {
     width: 18px;
     fill: #fff;
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
   }
 `;

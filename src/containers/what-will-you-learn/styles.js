@@ -16,6 +16,10 @@ export const CardsList = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   grid-gap: 28px;
+
+  @media (max-width: 576px) {
+    margin-top: 30px;
+  }
 `;
 
 export const Card = styled.div`

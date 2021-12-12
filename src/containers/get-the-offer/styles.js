@@ -13,13 +13,6 @@ export const Wrapper = styled.section`
     color: ${({ theme }) => theme.colors.aquaDeep};
   }
 
-  h4 {
-    font-size: 36px;
-    font-weight: 800;
-    color: ${({ theme }) => theme.colors.aquaDeep};
-    text-align: left;
-  }
-
   ul {
     list-style: none;
     text-align: left;
@@ -45,6 +38,10 @@ export const Wrapper = styled.section`
       transform: rotate(45deg);
     }
   }
+
+  @media (max-width: 576px) {
+    padding: 50px 0;
+  }
 `;
 
 export const OfferWhile = styled.div`
@@ -62,7 +59,7 @@ OfferWhile.Left = styled.div`
   width: 48%;
   background: #fff;
   border-radius: 30px;
-  padding: 5%;
+  padding: 16px;
 
   p {
     color: ${({ theme }) => theme.colors.aquaDeep};
@@ -80,6 +77,10 @@ OfferWhile.Left = styled.div`
       font-size: 30px;
       position: relative;
       top: -11px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 40px;
     }
   }
 
