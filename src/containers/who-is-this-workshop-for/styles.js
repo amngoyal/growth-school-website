@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
   padding: 6% 0;
   width: 100%;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right,
     ${({ theme }) => theme.colors.mintGreen},
     ${({ theme }) => theme.colors.backgroundTwo}

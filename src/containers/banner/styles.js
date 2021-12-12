@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BannerWrapper = styled.section`
   padding: 12% 0 140px;
   width: 100%;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right,
     ${({ theme }) => theme.colors.mintGreen},
     ${({ theme }) => theme.colors.backgroundTwo}

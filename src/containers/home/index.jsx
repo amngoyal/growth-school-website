@@ -8,6 +8,7 @@ import MeetYourTrainer from "../meet-your-trainer";
 import GetCertified from "../get-certified";
 import GetTheOffer from "../get-the-offer";
 import Faqs from "../faqs";
+import WorkByStudents from "../work-by-students";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <WhatWillYouLearn />
       <WhoIsThisWorkshopFor />
       <UnlockBonuses />
+      <WorkByStudents />
       <MeetYourTrainer />
       <GetCertified />
       <GetTheOffer />
