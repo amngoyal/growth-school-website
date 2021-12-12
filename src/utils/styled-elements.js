@@ -26,7 +26,7 @@ export const LinkButton = styled.button`
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 1150px;
+  max-width: 1210px;
   margin: 0 auto;
   padding: 0 20px;
 

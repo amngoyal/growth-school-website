@@ -19,7 +19,7 @@ export const CardsList = styled.div`
 `;
 
 export const Card = styled.div`
-  flex: 0 0 calc(50% - 28px);
+  width: calc(50% - 14px);
   border: 1px solid ${({ theme }) => theme.colors.blue};
   background: #fff;
   padding: 35px 25px;

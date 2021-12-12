@@ -6,7 +6,7 @@ export const Header = styled.header`
 
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 10;
 `;
 
 export const HeaderContent = styled.div`
@@ -38,4 +38,10 @@ export const Nav = styled.nav`
   }
 `;
 
-export const HeaderAction = styled.div``;
+export const HeaderAction = styled.div`
+  button {
+    font-size: 14px;
+    padding: 12px 30px;
+    color: #fff;
+  }
+`;

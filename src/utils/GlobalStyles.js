@@ -54,6 +54,24 @@ const GlobalStyles = createGlobalStyle`
         font-style: normal;
     }
 
+
+    ::-webkit-scrollbar {
+    width:5px;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background:#fff;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background: #056A67;
+    height:0px;
+}
+
     *,
     ::before,
     ::after {
@@ -90,7 +108,7 @@ const GlobalStyles = createGlobalStyle`
         color: ${({ theme }) => theme.colors.aquaDeep}
     }
     h6{
-        font-size: 1rem;
+        font-size: 1.06rem;
         font-weight: 700;
         color: ${({ theme }) => theme.colors.aquaDeep}
     }
