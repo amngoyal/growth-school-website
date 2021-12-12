@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header } from "./components";
+import { Footer, Header } from "./components";
 import Home from "./containers/home";
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

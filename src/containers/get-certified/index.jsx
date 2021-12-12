@@ -17,7 +17,7 @@ const GetCertified = () => {
     <Wrapper>
       <Container>
         <h2>Get Certified</h2>
-        <p className="get-certified-subtitle">
+        <p className="section-subtitle">
           Yes! You will be certified for this workshop once you submit your
           assignment.
         </p>

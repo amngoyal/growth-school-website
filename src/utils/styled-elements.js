@@ -30,7 +30,7 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 20px;
 
-  .get-certified-subtitle {
+  .section-subtitle {
     margin-top: 12px;
   }
 `;

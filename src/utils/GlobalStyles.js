@@ -105,6 +105,13 @@ const GlobalStyles = createGlobalStyle`
         color: ${({ theme }) => theme.colors.aquaDeep}
     }
 
+    a{
+        font-size: 14px;
+        color: #ffffff80;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
 `;
 
 export default GlobalStyles;
