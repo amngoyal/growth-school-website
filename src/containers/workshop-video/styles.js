@@ -10,10 +10,19 @@ export const VideoContainer = styled.div`
   justify-content: space-between;
   gap: 30px;
   transform: translateY(-80px);
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 440px) {
+    transform: translateY(-40px);
+  }
 `;
 
 export const VideoCard = styled.div`
-  flex: 1;
+  width: 100%;
   height: 375px;
   border-radius: 20px;
 
@@ -27,6 +36,10 @@ export const InfoCardsContainer = styled.div`
   display: flex;
   flex-direction: column;
   grid-gap: 30px;
+
+  @media (max-width: 767px) {
+    flex-direction: row;
+  }
 `;
 
 export const InfoCard = styled.div`
@@ -53,6 +66,12 @@ export const InfoCard = styled.div`
   h6 {
     margin-top: 8px;
     color: ${({ theme }) => theme.colors.aquaDeep};
+  }
+
+  @media (max-width: 440px) {
+    max-width: 180px;
+    min-width: 120px;
+    width: 100%;
   }
 `;
 
@@ -88,5 +107,9 @@ export const FeaturedInWrapper = styled.div`
       max-width: 100%;
       object-fit: contain;
     }
+  }
+
+  @media (max-width: 440px) {
+    transform: translateY(0px);
   }
 `;

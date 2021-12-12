@@ -36,12 +36,40 @@ export const Nav = styled.nav`
     font-size: 14px;
     cursor: pointer;
   }
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
 `;
 
 export const HeaderAction = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
   button {
+    width: 160px;
     font-size: 14px;
-    padding: 12px 30px;
+    padding: 12px;
     color: #fff;
+  }
+`;
+
+export const HamburgerMenu = styled.div`
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  svg {
+    width: 18px;
+    fill: #fff;
   }
 `;

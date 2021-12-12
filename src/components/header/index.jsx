@@ -1,6 +1,14 @@
 import React from "react";
 import { Container, LinkButton } from "../../utils/styled-elements";
-import { Header, HeaderAction, HeaderContent, HeaderLogo, Nav } from "./styles";
+import {
+  HamburgerMenu,
+  Header,
+  HeaderAction,
+  HeaderContent,
+  HeaderLogo,
+  Nav,
+} from "./styles";
+import { ReactComponent as HamburgerIcon } from "../../assets/icons/hamburger.svg";
 
 const NavBar = () => {
   return (
@@ -24,6 +32,10 @@ const NavBar = () => {
 
           <HeaderAction>
             <LinkButton>Apply as Mentor</LinkButton>
+
+            <HamburgerMenu>
+              <HamburgerIcon />
+            </HamburgerMenu>
           </HeaderAction>
         </HeaderContent>
       </Container>

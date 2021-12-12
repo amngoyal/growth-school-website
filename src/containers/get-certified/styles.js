@@ -60,6 +60,10 @@ export const CertifiedContainer = styled.div`
   justify-content: space-between;
 
   margin-top: 50px;
+
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const CertificateFeatures = styled.div`
@@ -68,6 +72,10 @@ export const CertificateFeatures = styled.div`
   display: flex;
   flex-direction: column;
   gap: 50px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 `;
 
 CertificateFeatures.Item = styled.div`
@@ -96,5 +104,9 @@ export const CertificateImageContainer = styled.div`
   img {
     max-width: 100%;
     border-radius: 23px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
   }
 `;

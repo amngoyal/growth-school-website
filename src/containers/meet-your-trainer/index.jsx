@@ -24,8 +24,10 @@ const MeetYourTrainer = () => {
         <TrainerCard>
           <TrainerCard.Left>
             <img src={VaibhavImg} alt="vaibhav" />
-            <h6> Vaibhav Sisinty </h6>
-            <p>LinkedIn Growth Expert, Growth Hacker, Ex- Uber & Klook</p>
+            <div>
+              <h6> Vaibhav Sisinty </h6>
+              <p>LinkedIn Growth Expert, Growth Hacker, Ex- Uber & Klook</p>
+            </div>
           </TrainerCard.Left>
           <TrainerCard.Right>
             <p>

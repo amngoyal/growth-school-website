@@ -33,6 +33,13 @@ export const Container = styled.div`
   .section-subtitle {
     margin-top: 12px;
   }
+
+  @media (max-width: 1023px) {
+    max-width: 790px;
+  }
+  @media (max-width: 767px) {
+    max-width: 580px;
+  }
 `;
 
 export const Icon = styled.div`

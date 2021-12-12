@@ -44,6 +44,15 @@ export const Grid = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   margin-top: 40px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    margin: 40px auto 0;
+  }
 `;
 
 Grid.Item = styled.div`

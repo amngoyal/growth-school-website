@@ -52,6 +52,10 @@ export const OfferWhile = styled.div`
   justify-content: space-between;
   gap: 20px;
   margin-top: 50px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
 OfferWhile.Left = styled.div`
@@ -85,11 +89,20 @@ OfferWhile.Left = styled.div`
     width: 100%;
     padding: 20px 0;
   }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 `;
 OfferWhile.Right = styled.div`
   width: 45%;
 
   .offer-while__get-bonus-box {
     margin-top: 40px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 10px;
   }
 `;

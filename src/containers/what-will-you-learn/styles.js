@@ -34,4 +34,9 @@ export const Card = styled.div`
     margin-top: 14px;
     padding-right: 12%;
   }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    max-width: 350px;
+  }
 `;

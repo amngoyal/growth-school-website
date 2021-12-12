@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FaqsWrapper = styled.section`
   position: relative;
-  padding: 0 6% 6%;
+  padding: 0 0 6%;
 
   .faqs-bg-pattern-3 {
     position: absolute;
@@ -86,17 +86,22 @@ export const Accordion = styled.div`
   margin-top: 25px;
   border-radius: 15px;
   box-shadow: 20px 24px 74px rgba(134, 57, 231, 0.05);
+  position: relative;
+  z-index: 2;
 `;
 
 Accordion.Title = styled.div`
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  gap: 10px;
 `;
 
 export const ToggleIcon = styled.div`
+  min-width: 24px;
+  height: 24px;
   background-color: ${({ theme }) => theme.colors.aquaDeep};
-  padding: 6px;
+
   display: flex;
   justify-content: center;
   align-items: center;

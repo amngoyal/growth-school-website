@@ -27,13 +27,20 @@ export const TrainerCard = styled.div`
   gap: 40px;
   margin: 0 auto;
   margin-top: 50px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 TrainerCard.Left = styled.div`
   width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
   h6 {
-    margin-top: 20px;
     width: 100%;
     text-align: center;
   }
@@ -46,10 +53,24 @@ TrainerCard.Left = styled.div`
 
   img {
     width: 100%;
+
     object-fit: contain;
     border-radius: 50%;
 
     box-shadow: 20px 30px 90px rgba(46, 43, 38, 0.1);
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    > img {
+      max-width: 120px;
+    }
+    p,
+    h6 {
+      text-align: left;
+    }
   }
 `;
 
@@ -62,6 +83,10 @@ TrainerCard.Right = styled.div`
     font-size: 14px;
     margin-top: 12px;
     line-height: 1.5;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `;
 

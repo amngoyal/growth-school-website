@@ -17,6 +17,12 @@ export const FooterWrapper = styled.footer`
 export const FooterContent = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 `;
 
 FooterContent.Logo = styled.div`
@@ -60,5 +66,9 @@ export const FooterCopyrightContainer = styled.div`
 
   p {
     font-size: 14px;
+  }
+
+  @media (max-width: 767px) {
+    text-align: center;
   }
 `;
