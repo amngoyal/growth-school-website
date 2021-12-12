@@ -32,6 +32,34 @@ export const Wrapper = styled.section`
     border: 1px solid rgba(255, 255, 255, 0.15);
     transform: scale(2);
   }
+
+  .steller-bg-pattern-1 {
+    position: absolute;
+    top: 22%;
+    left: 0;
+    width: 6%;
+    opacity: 0.5;
+    z-index: 3;
+    filter: brightness(100);
+  }
+  .steller-bg-pattern-2 {
+    position: absolute;
+    right: 0;
+    width: 9%;
+    top: 11%;
+    opacity: 0.5;
+    filter: brightness(100);
+    z-index: 3;
+  }
+  .steller-bg-pattern-3 {
+    position: absolute;
+    left: 0;
+    width: 9%;
+    bottom: 0;
+    opacity: 0.5;
+    filter: brightness(100);
+    z-index: 3;
+  }
 `;
 
 export const CarouselContainer = styled.div`

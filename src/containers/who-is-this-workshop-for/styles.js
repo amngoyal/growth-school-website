@@ -26,12 +26,13 @@ export const Wrapper = styled.section`
 
   ::after {
     content: "";
+    position: absolute;
+    bottom: 5%;
+    right: -6%;
     width: 200px;
     height: 200px;
-    position: absolute;
-    bottom: 17%;
-    right: -6%;
     z-index: 1;
+
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.15);
     transform: scale(2);
@@ -39,6 +40,26 @@ export const Wrapper = styled.section`
 
   p {
     margin: 50px 0 40px;
+  }
+
+  .who-bg-pattern-1 {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 6%;
+    opacity: 0.5;
+    z-index: 3;
+    filter: brightness(100);
+  }
+
+  .who-bg-pattern-2 {
+    position: absolute;
+    right: 0;
+    width: 9%;
+    top: 33%;
+    opacity: 0.5;
+    filter: brightness(100);
+    z-index: 3;
   }
 `;
 

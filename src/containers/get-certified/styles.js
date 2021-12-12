@@ -33,6 +33,25 @@ export const Wrapper = styled.section`
     border: 1px solid rgba(255, 255, 255, 0.15);
     transform: scale(2);
   }
+
+  .certified-bg-pattern-1 {
+    position: absolute;
+    left: 0;
+    width: 9%;
+    top: 13%;
+    opacity: 0.5;
+    filter: brightness(100);
+    z-index: 3;
+  }
+  .certified-bg-pattern-2 {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    width: 6%;
+    opacity: 0.5;
+    z-index: 3;
+    filter: brightness(100);
+  }
 `;
 
 export const CertifiedContainer = styled.div`

@@ -9,12 +9,14 @@ import {
 import { ReactComponent as VerifyIcon } from "../../assets/icons/verify.svg";
 import { ReactComponent as ShareIcon } from "../../assets/icons/share.svg";
 import { ReactComponent as LockIcon } from "../../assets/icons/lock.svg";
-
 import CertificateImg from "../../assets/images/certificate.png";
+import BgPattern from "../../assets/images/bg-pattern.svg";
 
 const GetCertified = () => {
   return (
     <Wrapper>
+      <img className="certified-bg-pattern-1" src={BgPattern} alt="pattern" />
+      <img className="certified-bg-pattern-2" src={BgPattern} alt="pattern" />
       <Container>
         <h2>Get Certified</h2>
         <p className="section-subtitle">

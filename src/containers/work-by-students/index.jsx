@@ -2,10 +2,14 @@ import React from "react";
 import Carousel from "../../components/carousel";
 import { Container } from "../../utils/styled-elements";
 import { CarouselContainer, CarouselItem, Wrapper } from "./styles";
+import BgPattern from "../../assets/images/bg-pattern.svg";
 
 const WorkByStudents = () => {
   return (
     <Wrapper>
+      <img className="steller-bg-pattern-1" src={BgPattern} alt="pattern" />
+      <img className="steller-bg-pattern-2" src={BgPattern} alt="pattern" />
+      <img className="steller-bg-pattern-3" src={BgPattern} alt="pattern" />
       <Container>
         <h2>Stellar work by our students</h2>
 

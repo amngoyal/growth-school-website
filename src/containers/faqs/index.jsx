@@ -9,6 +9,7 @@ import {
   ToggleIcon,
 } from "./styles";
 import AddIcon from "../../assets/icons/plus.png";
+import BgPattern from "../../assets/images/bg-pattern.svg";
 
 const Faqs = () => {
   const [accordionIndex, setAccordionIndex] = useState("");
@@ -22,9 +23,18 @@ const Faqs = () => {
 
   return (
     <FaqsWrapper>
+      <img className="faqs-bg-pattern-3" src={BgPattern} alt="pattern" />
+      <img className="faqs-bg-pattern-4" src={BgPattern} alt="pattern" />
+      <img className="faqs-bg-pattern-5" src={BgPattern} alt="pattern" />
+
       <Container>
         <FaqsContent>
-          <h2>FAQs</h2>
+          <h2>
+            FAQs
+            <img className="faqs-bg-pattern-1" src={BgPattern} alt="pattern" />
+          </h2>
+          <img className="faqs-bg-pattern-2" src={BgPattern} alt="pattern" />
+
           <AccordionContainer>
             {data.map((item, index) => (
               <Accordion key={item.title}>

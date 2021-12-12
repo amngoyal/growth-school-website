@@ -36,11 +36,32 @@ export const BannerWrapper = styled.section`
     border: 1px solid rgba(255, 255, 255, 0.15);
     transform: scale(2);
   }
+
+  .banner-bg-pattern-1 {
+    position: absolute;
+    top: 38%;
+    left: 0;
+    width: 7%;
+    opacity: 0.5;
+    z-index: 3;
+    filter: brightness(100);
+  }
+
+  .banner-bg-pattern-2 {
+    position: absolute;
+    right: 0;
+    width: 9%;
+    top: 30%;
+    opacity: 0.5;
+    filter: brightness(100);
+    z-index: 3;
+  }
 `;
 
 export const BannerContent = styled.div`
   width: 100%;
-  max-width: 640px;
+  max-width: 680px;
+  padding: 0 20px;
   margin: 0 auto;
 
   display: flex;

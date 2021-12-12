@@ -35,6 +35,7 @@ export const InfoCard = styled.div`
 
   border-radius: 20px;
   padding: 25px 15px;
+  border: 1px solid #fff;
   background: linear-gradient(
     180deg,
     rgb(232, 223, 223) 0.01%,

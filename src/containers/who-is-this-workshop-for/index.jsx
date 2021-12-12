@@ -2,10 +2,14 @@ import React from "react";
 import { Container, Icon, LinkButton } from "../../utils/styled-elements";
 import { CtaContainer, List, Wrapper } from "./styles";
 import { ReactComponent as CheckIcon } from "../../assets/icons/check.svg";
+import BgPattern from "../../assets/images/bg-pattern.svg";
 
 const WhoIsThisWorkshopFor = () => {
   return (
     <Wrapper>
+      <img className="who-bg-pattern-1" src={BgPattern} alt="pattern" />
+      <img className="who-bg-pattern-2" src={BgPattern} alt="pattern" />
+
       <Container>
         <h2>Who is this workshop for?</h2>
 

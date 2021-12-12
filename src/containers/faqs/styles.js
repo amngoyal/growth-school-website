@@ -3,6 +3,25 @@ import styled from "styled-components";
 export const FaqsWrapper = styled.section`
   position: relative;
   padding: 0 6% 6%;
+
+  .faqs-bg-pattern-3 {
+    position: absolute;
+    width: 5%;
+    top: 30%;
+    left: -2%;
+  }
+  .faqs-bg-pattern-4 {
+    position: absolute;
+    width: 10%;
+    top: 32%;
+    right: 0;
+  }
+  .faqs-bg-pattern-5 {
+    position: absolute;
+    width: 10%;
+    top: 50%;
+    right: 0;
+  }
 `;
 
 export const FaqsContent = styled.div`
@@ -29,6 +48,28 @@ export const FaqsContent = styled.div`
   button,
   a {
     margin-top: 70px;
+  }
+
+  h2 {
+    position: relative;
+    z-index: 2;
+  }
+
+  .faqs-bg-pattern-1 {
+    position: absolute;
+    width: 74%;
+    filter: brightness(100);
+    left: -40%;
+    top: -9%;
+  }
+
+  .faqs-bg-pattern-2 {
+    position: absolute;
+    width: 11%;
+    top: 12%;
+    right: 4%;
+    z-index: 1;
+    filter: brightness(100);
   }
 `;
 

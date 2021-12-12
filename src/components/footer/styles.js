@@ -4,6 +4,14 @@ export const FooterWrapper = styled.footer`
   position: relative;
   padding: 6% 0 0;
   background: linear-gradient(to right, #056a67, #004848);
+
+  .footer-bg-arrow {
+    position: absolute;
+    width: 12%;
+    left: 0;
+    bottom: 83px;
+    transition: 300ms ease-in-out;
+  }
 `;
 
 export const FooterContent = styled.div`

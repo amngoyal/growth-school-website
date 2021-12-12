@@ -8,9 +8,13 @@ import {
 import { ReactComponent as TwitterIcon } from "../../assets/icons/twitter.svg";
 import { ReactComponent as FbIcon } from "../../assets/icons/fb.svg";
 import { ReactComponent as InstagramIcon } from "../../assets/icons/instagram.svg";
+import FooterArrow from "../../assets/images/footer-arrow.svg";
+
 const Footer = () => {
   return (
     <FooterWrapper>
+      <img className="footer-bg-arrow" src={FooterArrow} alt="arrow" />
+
       <Container>
         <FooterContent>
           <FooterContent.Logo>
