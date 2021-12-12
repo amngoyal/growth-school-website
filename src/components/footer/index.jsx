@@ -14,32 +14,21 @@ const Footer = () => {
       <Container>
         <FooterContent>
           <FooterContent.Logo>
-            <img
-              src="https://growthschool.io/wp-content/uploads/2021/08/image-69.png"
-              alt="logo"
-            />
+            <a href="https://growthschool.io">
+              <img
+                src="https://growthschool.io/wp-content/uploads/2021/08/image-69.png"
+                alt="logo"
+              />
+            </a>
           </FooterContent.Logo>
           <FooterContent.Links>
             <h6>Growth School</h6>
             <ul>
               <li>
-                <a href="/">About</a>
+                <a href="https://growthschool.io/about/">About</a>
               </li>
               <li>
-                <a href="/">Community</a>
-              </li>
-            </ul>
-          </FooterContent.Links>
-          <FooterContent.Links>
-            <h6>
-              <br />
-            </h6>
-            <ul>
-              <li>
-                <a href="/">Workshops</a>
-              </li>
-              <li>
-                <a href="/">Programs</a>
+                <a href="https://growthschool.io/community/">Community</a>
               </li>
             </ul>
           </FooterContent.Links>
@@ -49,10 +38,25 @@ const Footer = () => {
             </h6>
             <ul>
               <li>
-                <a href="/">Apply as Mentor</a>
+                <a href="https://growthschool.io/live-workshops/">Workshops</a>
               </li>
               <li>
-                <a href="/">Login</a>
+                <a href="https://growthschool.io/live-programs/">Programs</a>
+              </li>
+            </ul>
+          </FooterContent.Links>
+          <FooterContent.Links>
+            <h6>
+              <br />
+            </h6>
+            <ul>
+              <li>
+                <a href="https://app.growthschool.io/?fluent-form=27">
+                  Apply as Mentor
+                </a>
+              </li>
+              <li>
+                <a href="https://app.growthschool.io/wp-login.php">Login</a>
               </li>
             </ul>
           </FooterContent.Links>
@@ -61,23 +65,37 @@ const Footer = () => {
             <h5>Need more info?</h5>
             <ul>
               <li>
-                <a href="/">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.facebook.com/growthschoolio"
+                >
                   <FbIcon />
                 </a>
               </li>
               <li>
-                <a href="/">
-                  <TwitterIcon />
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.instagram.com/growthschoolio/"
+                >
+                  <InstagramIcon />
                 </a>
               </li>
               <li>
-                <a href="/">
-                  <InstagramIcon />
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://twitter.com/growthschoolio"
+                >
+                  <TwitterIcon />
                 </a>
               </li>
             </ul>
 
-            <LinkButton secondary>Contact us</LinkButton>
+            <LinkButton href="mailto:hi@growthschool.io" secondary>
+              Contact us
+            </LinkButton>
           </FooterContent.MoreInfo>
         </FooterContent>
         <FooterCopyrightContainer>

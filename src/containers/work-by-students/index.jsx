@@ -13,7 +13,7 @@ const WorkByStudents = () => {
           <Carousel
             items={carouselData.map((item) => (
               <CarouselItem>
-                <a>
+                <a href={item.href}>
                   <CarouselItem.Left>
                     <img src={item.imgSrc} alt={item.name} />
                   </CarouselItem.Left>
@@ -44,6 +44,7 @@ export default WorkByStudents;
 
 const carouselData = [
   {
+    href: "https://growthschool.io/casestudy/get-expert-support-anytime-7/",
     imgSrc:
       "https://growthschool.io/wp-content/uploads/2021/07/1593711386688.jpg",
     date: "July 18, 2021",
@@ -53,6 +54,7 @@ const carouselData = [
     name: "Leela Shankar",
   },
   {
+    href: "https://growthschool.io/casestudy/get-expert-support-anytime-6/",
     imgSrc:
       "https://growthschool.io/wp-content/uploads/2021/06/1620117189084.jpg",
     date: "June 12, 2021",
@@ -62,6 +64,7 @@ const carouselData = [
     name: "Neha Goyal",
   },
   {
+    href: "https://growthschool.io/casestudy/get-expert-support-anytime-5/",
     imgSrc:
       "https://growthschool.io/wp-content/uploads/2021/06/1614958226116.jpg",
     date: "June 12, 2021",
