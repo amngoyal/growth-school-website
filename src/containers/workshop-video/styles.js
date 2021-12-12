@@ -30,6 +30,11 @@ export const VideoCard = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 767px) {
+    height: 250px;
+    background-position: top;
+  }
 `;
 
 export const InfoCardsContainer = styled.div`
@@ -39,6 +44,8 @@ export const InfoCardsContainer = styled.div`
 
   @media (max-width: 767px) {
     flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
   }
 `;
 

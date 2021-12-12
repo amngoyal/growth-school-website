@@ -81,6 +81,11 @@ const GlobalStyles = createGlobalStyle`
     }
     html{
         font-size: 16px;
+
+        @media(max-width: 576px){
+            font-size: 14px;
+        }
+      
     }
     body {
         margin: 0;
@@ -100,12 +105,20 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 800;
         color: #fff;
         text-align: center;
+
+        @media(max-width: 420px){
+            font-size: 2rem;
+        }
     }
 
     h5{
         font-size: 1.5rem;
         font-weight: 800;
-        color: ${({ theme }) => theme.colors.aquaDeep}
+        color: ${({ theme }) => theme.colors.aquaDeep};
+
+        @media(max-width: 420px){
+            font-size: 1.2rem;
+        }
     }
     h6{
         font-size: 1.06rem;
