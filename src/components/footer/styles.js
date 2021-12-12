@@ -26,7 +26,9 @@ export const FooterContent = styled.div`
 `;
 
 FooterContent.Logo = styled.div`
+  @media (max-width: 767px) {
   img {
+    margin-bottom: 30px;
   }
 `;
 FooterContent.Links = styled.div`
@@ -42,6 +44,12 @@ FooterContent.Links = styled.div`
 
   li {
     margin-top: 16px;
+
+  a{
+    :hover {
+      color: white;
+    }
+  
   }
 `;
 FooterContent.MoreInfo = styled.div`

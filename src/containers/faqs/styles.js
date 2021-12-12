@@ -117,10 +117,9 @@ export const ToggleIcon = styled.div`
 
 Accordion.Content = styled.div`
   overflow: hidden;
-  height: 0;
-  height: ${({ isOpen }) => (isOpen ? "70px" : "0px")};
-  transition: height 0.5s linear;
-
+  max-height: 1000px;
+  max-height: ${({ isOpen }) => (isOpen ? "1000px" : "0px")};
+  /* transition: all 0.5s linear; */
   p {
     color: ${({ theme }) => theme.colors.aquaDeep};
     opacity: 0.5;

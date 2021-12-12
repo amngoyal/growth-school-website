@@ -19,7 +19,7 @@ const WhoIsThisWorkshopFor = () => {
         </Fade>
         <List>
           {data.map((item) => (
-            <List.Item kley={item}>
+            <List.Item key={item}>
               <Icon>
                 <CheckIcon />
               </Icon>

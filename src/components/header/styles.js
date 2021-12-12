@@ -1,12 +1,19 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  width: 100%;
-  padding-top: 20px;
+  > div {
+    width: 100%;
+    padding: ${({ isFixedHeader }) =>
+      isFixedHeader ? "13px 0" : "20px 0 0 0"};
+    display: ${({ hideHeader }) => (hideHeader ? "none" : "block")};
 
-  position: fixed;
-  top: 0;
-  z-index: 10;
+    position: ${({ isFixedHeader }) => (isFixedHeader ? "fixed" : "absolute")};
+    top: 0;
+    z-index: 10;
+
+    background: ${({ isFixedHeader }) =>
+      isFixedHeader ? "#056A67" : "transparent"};
+  }
 `;
 
 export const HeaderContent = styled.div`
@@ -17,13 +24,14 @@ export const HeaderContent = styled.div`
 
 export const HeaderLogo = styled.div`
   img {
-    width: 125px;
+    width: ${({ isFixedHeader }) => (isFixedHeader ? 110 : 125)}px;
     object-fit: contain;
   }
 `;
 
 export const Nav = styled.nav`
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: ${({ isFixedHeader }) =>
+    isFixedHeader ? "none" : "1px solid rgba(255, 255, 255, 0.15)"};
   border-radius: 30px;
   padding: 12px 30px 8px;
 
@@ -32,7 +40,7 @@ export const Nav = styled.nav`
   p {
     padding: 0 15px;
     color: #fff;
-    opacity: 0.8;
+    opacity: ${({ isFixedHeader }) => (isFixedHeader ? 1 : 0.8)};
     font-size: 14px;
     cursor: pointer;
   }

@@ -20,7 +20,7 @@ const WorkByStudents = () => {
         <CarouselContainer>
           <Carousel
             items={carouselData.map((item) => (
-              <CarouselItem>
+              <CarouselItem key={item.href}>
                 <a href={item.href}>
                   <CarouselItem.Left>
                     <img src={item.imgSrc} alt={item.name} />

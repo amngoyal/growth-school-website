@@ -20,7 +20,7 @@ const GetTheOffer = () => {
             </p>
             <ul>
               {workshopOffer.map((item) => (
-                <li key="item">{item}</li>
+                <li key={item}>{item}</li>
               ))}
             </ul>
             <br />
@@ -36,7 +36,7 @@ const GetTheOffer = () => {
               <h4>What you’ll get...</h4>
               <ul>
                 {whatYouGet.map((item) => (
-                  <li key="item">{item}</li>
+                  <li key={item}>{item}</li>
                 ))}
               </ul>
             </div>
@@ -45,7 +45,7 @@ const GetTheOffer = () => {
               <h4>And bonuses too...</h4>
               <ul>
                 {bonuses.map((item) => (
-                  <li key="item">{item}</li>
+                  <li key={item}>{item}</li>
                 ))}
               </ul>
             </div>
