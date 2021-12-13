@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, LinkButton } from "../../utils/styled-elements";
 import {
-  HamburgerMenu,
+  // HamburgerMenu,
   Header,
   HeaderAction,
   HeaderContent,
@@ -10,7 +10,7 @@ import {
   SubMenuColumn,
   SubMenuWrapper,
 } from "./styles";
-import { ReactComponent as HamburgerIcon } from "../../assets/icons/hamburger.svg";
+// import { ReactComponent as HamburgerIcon } from "../../assets/icons/hamburger.svg";
 import { ReactComponent as ArrowRightIcon } from "../../assets/icons/right-arrow.svg";
 import Fade from "react-reveal/Fade";
 import MarketingIcon from "../../assets/icons/Marketing.png";
