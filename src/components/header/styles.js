@@ -129,6 +129,16 @@ export const SubMenuWrapper = styled.div`
     position: absolute;
     top: -10px;
   }
+  ::before {
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: 0;
+    right: 0;
+    background: transparent;
+    height: 25px;
+  }
+
   &.workshop-submenu {
     left: -301px;
     ::after {
