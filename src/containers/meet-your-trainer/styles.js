@@ -85,6 +85,13 @@ TrainerCard.Left = styled.div`
     h6 {
       text-align: left;
     }
+    .trainer-pic-container {
+      .trainer-play-button {
+        bottom: 0px;
+        right: 0px;
+        transform: scale(0.5);
+      }
+    }
   }
 `;
 
