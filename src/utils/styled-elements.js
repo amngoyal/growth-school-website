@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// import PlayIcon from "../assets/icons/play.svg";
 
 export const LinkButton = styled.button`
   padding: 12px 40px;
@@ -60,4 +61,20 @@ export const Icon = styled.div`
     width: 23px;
     object-fit: contain;
   }
+`;
+
+export const PlayButton = styled.button`
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

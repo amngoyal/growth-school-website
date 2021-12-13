@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FeaturedInWrapper,
   InfoCard,
@@ -11,13 +11,17 @@ import { ReactComponent as DateIcon } from "../../assets/icons/timer.svg";
 import { ReactComponent as VideoIcon } from "../../assets/icons/record.svg";
 import { ReactComponent as DurationIcon } from "../../assets/icons/setting.svg";
 import { ReactComponent as BonusIcon } from "../../assets/icons/check-file.svg";
+import { ReactComponent as PlayIcon } from "../../assets/icons/play.svg";
 import JoshTalkImg from "../../assets/images/josh-talks.png";
 import DeccanImg from "../../assets/images/deccan.png";
 import YahooImg from "../../assets/images/yahoo.png";
 import IndianExpressImg from "../../assets/images/indian-express.png";
-import { Container, Icon } from "../../utils/styled-elements";
+import { Container, Icon, PlayButton } from "../../utils/styled-elements";
+import { Modal } from "../../components";
 
 const WorkshopLearnings = () => {
+  const [openVideoDialog, setOpenVideoDialog] = useState(false);
+
   return (
     <Wrapper>
       <Container>
@@ -34,7 +38,11 @@ const WorkshopLearnings = () => {
             ))}
           </InfoCardsContainer>
 
-          <VideoCard></VideoCard>
+          <VideoCard>
+            <PlayButton onClick={() => setOpenVideoDialog(true)}>
+              <PlayIcon />
+            </PlayButton>
+          </VideoCard>
 
           <InfoCardsContainer>
             {rightCards.map((item) => (
@@ -60,6 +68,8 @@ const WorkshopLearnings = () => {
           </ul>
         </FeaturedInWrapper>
       </Container>
+
+      <Modal open={openVideoDialog} onClose={() => setOpenVideoDialog(false)} />
     </Wrapper>
   );
 };

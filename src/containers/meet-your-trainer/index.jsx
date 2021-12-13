@@ -1,5 +1,5 @@
-import React from "react";
-import { Container } from "../../utils/styled-elements";
+import React, { useState } from "react";
+import { Container, PlayButton } from "../../utils/styled-elements";
 import {
   FeaturedInContainer,
   FeatureItem,
@@ -15,8 +15,12 @@ import IndianExpressImg from "../../assets/images/indian-express.png";
 import DailyHuntImg from "../../assets/images/daily-hunt.png";
 import HindustanTimesImg from "../../assets/images/hindustan-times.png";
 import Fade from "react-reveal/Fade";
+import { ReactComponent as PlayIcon } from "../../assets/icons/play.svg";
+import { Modal } from "../../components";
 
 const MeetYourTrainer = () => {
+  const [openVideoDialog, setOpenVideoDialog] = useState(false);
+
   return (
     <Wrapper>
       <Container>
@@ -27,7 +31,15 @@ const MeetYourTrainer = () => {
         </Fade>
         <TrainerCard>
           <TrainerCard.Left>
-            <img src={VaibhavImg} alt="vaibhav" />
+            <div className="trainer-pic-container">
+              <img src={VaibhavImg} alt="vaibhav" />
+              <PlayButton
+                className="trainer-play-button"
+                onClick={() => setOpenVideoDialog(true)}
+              >
+                <PlayIcon />
+              </PlayButton>
+            </div>
             <div>
               <h6> Vaibhav Sisinty </h6>
               <p>LinkedIn Growth Expert, Growth Hacker, Ex- Uber & Klook</p>
@@ -62,6 +74,8 @@ const MeetYourTrainer = () => {
           </TrainerCard.Right>
         </TrainerCard>
       </Container>
+
+      <Modal open={openVideoDialog} onClose={() => setOpenVideoDialog(false)} />
     </Wrapper>
   );
 };

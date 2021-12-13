@@ -31,6 +31,10 @@ export const VideoCard = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media (max-width: 767px) {
     height: 250px;
     background-position: top;

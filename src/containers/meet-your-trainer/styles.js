@@ -55,13 +55,23 @@ TrainerCard.Left = styled.div`
     margin-bottom: 20px;
   }
 
-  img {
-    width: 100%;
+  .trainer-pic-container {
+    position: relative;
+    img {
+      width: 100%;
 
-    object-fit: contain;
-    border-radius: 50%;
+      object-fit: contain;
+      border-radius: 50%;
 
-    box-shadow: 20px 30px 90px rgba(46, 43, 38, 0.1);
+      box-shadow: 20px 30px 90px rgba(46, 43, 38, 0.1);
+    }
+
+    .trainer-play-button {
+      position: absolute;
+      bottom: 10px;
+      right: 15px;
+      transform: scale(0.75);
+    }
   }
 
   @media (max-width: 600px) {
