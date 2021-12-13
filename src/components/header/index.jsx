@@ -83,9 +83,9 @@ const NavBar = () => {
               <HeaderAction>
                 <LinkButton>Apply as Mentor</LinkButton>
 
-                <HamburgerMenu>
+                {/* <HamburgerMenu>
                   <HamburgerIcon />
-                </HamburgerMenu>
+                </HamburgerMenu> */}
               </HeaderAction>
             </HeaderContent>
           </Container>
