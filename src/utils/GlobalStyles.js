@@ -96,7 +96,6 @@ const GlobalStyles = createGlobalStyle`
     p, ul, a, h2, h3{
         padding: 0;
         margin: 0;
-        transition: all 1s ease;
         font-family: 'Gilroy', sans-serif;
     }
 
